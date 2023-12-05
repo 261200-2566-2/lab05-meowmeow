@@ -50,7 +50,7 @@ public class Assassin implements Character {
         this.maxSpeed = baseSpeed + (0.1 + 0.03 * level);
     }
     
-    private void calculateStats() {
+    public void calculateStats() {
         this.maxHp = baseHp + (10 * level);
         this.maxMana = baseMana + (2 * level);
         this.maxSpeed = baseSpeed + (0.1 + 0.03 * level);
@@ -65,9 +65,44 @@ public class Assassin implements Character {
         }
     }
 
-    @Override
+    public String getName() {
+        return name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public double getHp() {
+        return hp;
+    }
+
+    public double getMaxHp() {
+        return maxHp;
+    }
+
+    public double getMana() {
+        return mana;
+    }
+
+    public double getMaxMana() {
+        return maxMana;
+    }
+
     public double getAttack() {
-        return knife == null ? attack : attack + knife.getAttack();
+        return attack;
+    }
+
+    public double getMagic() {
+        return magic;
+    }
+
+    public double getDefense() {
+        return defense;
+    }
+
+    public double getSpeed() {
+        return speed;
     }
 
     Knife getKnife() {

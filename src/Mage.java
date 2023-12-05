@@ -65,9 +65,44 @@ public class Mage implements Character {
         }
     }
 
-    @Override
+    public String getName() {
+        return name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public double getHp() {
+        return hp;
+    }
+
+    public double getMaxHp() {
+        return maxHp;
+    }
+
+    public double getMana() {
+        return mana;
+    }
+
+    public double getMaxMana() {
+        return maxMana;
+    }
+
+    public double getAttack() {
+        return attack;
+    }
+
     public double getMagic() {
         return codex == null ? magic : magic + codex.getMagic();
+    }
+
+    public double getDefense() {
+        return defense;
+    }
+
+    public double getSpeed() {
+        return speed;
     }
 
     Codex getCodex() {

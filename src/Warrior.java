@@ -65,14 +65,44 @@ public class Warrior implements Character {
         }
     }
 
-    @Override
+    public String getName() {
+        return name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public double getHp() {
+        return hp;
+    }
+
+    public double getMaxHp() {
+        return maxHp;
+    }
+
+    public double getMana() {
+        return mana;
+    }
+
+    public double getMaxMana() {
+        return maxMana;
+    }
+
     public double getAttack() {
         return shield == null ? attack : attack + shield.getAttack();
     }
 
-    @Override
+    public double getMagic() {
+        return magic;
+    }
+
     public double getDefense() {
         return shield == null ? defense : defense + shield.getDefense();
+    }
+
+    public double getSpeed() {
+        return speed;
     }
 
     Shield getShield() {

@@ -22,6 +22,14 @@ public class Codex implements Weapon {
         this.level = level;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
     public double getMagic() {
         return magic;
     }
