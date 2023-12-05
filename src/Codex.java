@@ -36,6 +36,6 @@ public class Codex implements Weapon {
 
     public void upgrade() {
         level++;
-        baseMagic = baseMagic * (1 + 0.1 * level);
+        baseMagic = baseMagic * (1 + 0.2 * level);
     }
 }

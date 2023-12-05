@@ -44,6 +44,6 @@ public class Shield implements Weapon {
     public void upgrade() {
         level++;
         baseAttack = baseAttack * (1 + 0.1 * level);
-        baseDefense = baseDefense * (1 + 2 * level);
+        baseDefense = baseDefense * (1 + 0.2 * level);
     }
 }
