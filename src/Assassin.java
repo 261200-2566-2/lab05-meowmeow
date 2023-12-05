@@ -57,7 +57,7 @@ public class Assassin implements Character {
         this.attack = baseAttack * (1 + 2 * level);
         this.magic = baseMagic * (1 + 0.1 * level);
         this.defense = baseDefense * (1 + 0.1 * level);
-        this.maxSpeed = baseSpeed + (1 + 0.03 * level);
+        this.maxSpeed = baseSpeed + (1 + 0.05 * level);
         if (knife != null) {
             speed = maxSpeed * (0.8 + 0.07 * knife.getLevel());
         } else {
