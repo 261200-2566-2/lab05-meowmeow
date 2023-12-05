@@ -90,7 +90,7 @@ public class Assassin implements Character {
     }
 
     public double getAttack() {
-        return attack;
+        return knife == null ? attack : attack + knife.getAttack();
     }
 
     public double getMagic() {
@@ -150,6 +150,7 @@ public class Assassin implements Character {
             Assassin assassin = (Assassin) target;
             assassin.getAttackedMagic(this.getMagic());
         }
+        mana--;
     }
 
     public void heal(double amount) {

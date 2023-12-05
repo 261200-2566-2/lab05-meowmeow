@@ -136,9 +136,7 @@ public class Mage implements Character {
     }
 
     protected void getAttackedMagic(double damage) {
-        if (codex != null) {
-            damage -= this.getMagic() * 0.5;
-        }
+        damage -= this.getMagic() * 0.5;
         if (damage > 0) {
             hp -= damage;
         }
@@ -155,6 +153,7 @@ public class Mage implements Character {
             Assassin assassin = (Assassin) target;
             assassin.getAttackedMagic(this.getMagic());
         }
+        mana--;
     }
 
     public void heal(double amount) {

@@ -119,9 +119,7 @@ public class Warrior implements Character {
     }
 
     protected void getAttacked(double damage) {
-        if (shield != null) {
-            damage -= this.getDefense() * 0.5;
-        }
+        damage -= this.getDefense() * 0.5;
         if (damage > 0) {
             hp -= damage;
         }
@@ -141,7 +139,7 @@ public class Warrior implements Character {
     }
 
     protected void getAttackedMagic(double damage) {
-        mana -= damage;
+        hp -= damage;
     }
 
     public void attackMagic(Character target) {
