@@ -13,5 +13,8 @@ public class Main {
             // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
         }
+
+        Assassin assassin = new Assassin("Ezio", 25);
+        System.out.println(assassin.getName());
     }
 }
