@@ -1,4 +1,4 @@
-public class lab05 {
+public class Lab05 {
     public static void showStats(Character name) {
         System.out.println("Name: " + name.getName());
         System.out.println("Class: " + name.getClass());
